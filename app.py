@@ -74,7 +74,7 @@ def get_weather():
 
     # 3. Gemini AI Analysis
     # Note: Using gemini-1.5-flash as 2.5 is not standard yet. Change back if you have specific access.
-    ai_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}"
+    ai_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={GEMINI_API_KEY}"
     
     prompt = f"""
     Act as a disaster management AI. Analyze this detailed weather report:
@@ -118,3 +118,4 @@ def get_weather():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
